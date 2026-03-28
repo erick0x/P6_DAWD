@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Notas - DAWD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Sistema de Gestión de Notas</h1>
+        
+        <div class="form-section">
+            <h2>Registrar Nota</h2>
+            <input type="text" id="studentName" placeholder="Nombre del estudiante">
+            <input type="number" id="noteValue" placeholder="Nota (0-20)">
+            <button onclick="addNote()">Agregar Nota</button>
+        </div>
+
+        <div class="stats-section">
+            <h2>Estadísticas</h2>
+            <div class="stats">
+                <p>📝 Total Notas: <span id="totalNotes">0</span></p>
+                <p>📈 Promedio: <span id="average">0</span></p>
+                <p>🏆 Nota más alta: <span id="highestNote">0</span></p>
+                <p>⚠️ Nota más baja: <span id="lowestNote">0</span></p>
+                <p>✅ Aprobados (>12): <span id="approved">0</span></p>
+            </div>
+        </div>
+
+        <div class="list-section">
+            <h2>Lista de Notas</h2>
+            <ul id="notesList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
